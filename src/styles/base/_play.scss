@@ -1,0 +1,207 @@
+.question {
+  width: 60%;
+  //   margin: 20% auto 0 auto;
+  padding: $sm $md;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff99;
+  border-left: 5px solid $blue;
+
+  h2 {
+    word-wrap: break-word;
+  }
+
+  .lifeline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifeline {
+    position: relative;
+    top: 3px;
+  }
+
+  .option {
+    background-color: $blue;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    cursor: pointer;
+    margin: $sx auto;
+    padding: $normal;
+    transition: 0.3s linear all;
+    text-align: center;
+    word-break: break-word;
+    font-size: $sm;
+    color: white;
+    font-weight: 600;
+    width: 70%;
+  }
+
+  .option:hover {
+    background-color: darken($color: $blue, $amount: 5%);
+  }
+
+  .danger {
+    border: 2px red solid;
+    background-color: #f34343d8;
+  }
+
+  .success {
+    border: 2px rgba(47, 255, 0, 0.816) solid;
+    background-color: #01b525ce;
+  }
+
+  .selected-answer {
+    border: 2px rgba(21, 0, 255, 0.816) solid;
+    background-color: #0051ff;
+  }
+  
+  .next-btn {
+    text-decoration: none;
+    appearance: button;
+    background-color: rgb(130, 14, 14);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .next-btn:after {
+    background-clip: padding-box;
+    background-color: #f02c2ce4;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .correct-answer {
+    width: 90%;
+    //   margin: 20% auto 0 auto;
+    padding: $sm $md;
+    font-size: $normal;
+    font-weight: 600;
+    text-align: center;
+    background-color: #72e03c9c;
+    border-left: 5px solid green;
+  }
+}
+
+.review-btn {
+  text-decoration: none;
+  appearance: button;
+  background-color: green;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.review-btn:after {
+  background-clip: padding-box;
+  background-color: rgb(20, 183, 20);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+ul > li {
+  display: inline-block;
+  padding: $normal;
+  /* You can also add some margins here to make it look prettier */
+}
+
+.image-size {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  
+  h2 {
+    font-size: $normal !important;
+  }
+  .option {
+    font-size: 12px !important;
+    // height: 15vh !important;
+  }
+  ul > li {
+    padding: $sx;
+    /* You can also add some margins here to make it look prettier */
+  }
+  .next-btn{
+    font-size: $sx !important;
+    width: 100% !important;
+  }
+  .play-btn{
+    font-size: 10px !important;
+  }
+  .review-btn{
+    font-size: 10px !important;
+
+  }
+  .image-congrat-size {
+    width: 100%;
+  }
+}
